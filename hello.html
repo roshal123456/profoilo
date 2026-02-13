@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <script>
+                let a="";
+                const b=2;
+                function submit(){
+                  a=document.getElementById('name').value
+                  document.getElementById('result').innerText = a;
+                }
+
+                const submitAnother = ()=>{
+                  a=document.getElementById('name').value
+                  document.getElementById('result').innerText = a +"hello";
+                }
+
+                console.log("here");
+        </script>
+    </head>
+    <body>
+       <input type="text" placeholder="Enter your  name" id="name" value="">
+
+       <button onclick="submit()">submit</button>
+        <button onclick="submitAnother()">submit1</button>
+
+       <p id="result"></p>
+    </body>
+</html>
